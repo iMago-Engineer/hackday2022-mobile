@@ -28,7 +28,8 @@ class StaticMapView extends StatelessWidget {
   static const _baseMapURL = 'https://maps.googleapis.com/maps/api/staticmap';
   static const _latitude = 35.667097;
   static const _longitude = 139.740178;
-  static const _mapZoom = 'zoom=18';
+  static const _mapType = 'maptype=satellite';
+  static const _mapZoom = 'zoom=16';
   static const _mapSize = 'size=720x640';
   static const _scale = 'scale=2';
   static const _language = 'language=ja';
@@ -36,7 +37,7 @@ class StaticMapView extends StatelessWidget {
   static const _mapMarkers = 'markers=$_latitude,$_longitude';
   static const _apiKey = 'key=${ApiKey.googleApi}';
   static const _imageUrl =
-      '$_baseMapURL?$_mapCenter&$_mapZoom&$_mapMarkers&$_mapSize&$_scale&$_language&$_apiKey';
+      '$_baseMapURL?$_mapCenter&$_mapZoom&$_mapMarkers&$_mapType&$_mapSize&$_scale&$_language&$_apiKey';
 
   @override
   Widget build(BuildContext context) {
