@@ -35,7 +35,7 @@ class SelectShikoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(region: '香川県'),
                       ),
                     );
                   },
@@ -66,7 +66,9 @@ class SelectShikoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '徳島県',
+                        ),
                       ),
                     );
                   },
@@ -97,7 +99,9 @@ class SelectShikoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '愛媛県',
+                        ),
                       ),
                     );
                   },
@@ -128,7 +132,9 @@ class SelectShikoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '高知県',
+                        ),
                       ),
                     );
                   },

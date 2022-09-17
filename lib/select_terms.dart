@@ -1,18 +1,25 @@
 import 'package:flutter/material.dart';
 
 class SelectTerms extends StatelessWidget {
-  const SelectTerms({super.key});
+  final String region;
+  // ignore: use_key_in_widget_constructors
+  const SelectTerms({required this.region});
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(child: MainPage(title: '見つけld'));
+    return SizedBox(
+        child: MainPage(
+      title: '見つけld',
+      region: region,
+    ));
   }
 }
 
 class MainPage extends StatefulWidget {
-  const MainPage({super.key, required this.title});
+  const MainPage({super.key, required this.title, required this.region});
 
   final String title;
+  final String region;
 
   @override
   State<MainPage> createState() => _MainState();
@@ -45,7 +52,9 @@ class _MainState extends State<MainPage> {
             const SizedBox(
               height: 32,
             ),
-            _SelectComponent()
+            _SelectComponent(
+              region: widget.region,
+            )
           ],
         ),
       ),
@@ -54,6 +63,8 @@ class _MainState extends State<MainPage> {
 }
 
 class _SelectComponent extends StatefulWidget {
+  const _SelectComponent({required this.region});
+  final String region;
   @override
   State<_SelectComponent> createState() => _SelectComponentState();
 }
@@ -75,12 +86,13 @@ class _SelectComponentState extends State<_SelectComponent> {
 
   // 値が変わったかどうか確認する関数
   // ボタンを押したときに実行するようになっている
-  //　APIとの繋ぎが出来たら削除する
+  //　APIとの繋ぎで使用する
   void valueChanged() {
     debugPrint(rain.toString());
     debugPrint(temperatureHight.toString());
     debugPrint(temperatureLow.toString());
     debugPrint(security.toString());
+    debugPrint(widget.region);
   }
 
   @override
