@@ -5,186 +5,194 @@ class SelectKinki extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          const Text(
-            '探したい都道府県',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-            ),
-          ),
-          const SizedBox(
-            height: 31,
-          ),
-          SizedBox(
-            width: 335,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
-                ),
-              ),
-              child: const Text(
-                '三重',
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color(0xff66B6C0),
+        elevation: 0,
+      ),
+      body: Container(
+        color: const Color(0xff66B6C0),
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              const Text(
+                '探したい都道府県',
                 style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
+                  color: Colors.white,
+                  fontSize: 20,
                 ),
               ),
-            ),
-          ),
-          const SizedBox(
-            height: 31,
-          ),
-          SizedBox(
-            width: 335,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
+              const SizedBox(
+                height: 31,
+              ),
+              SizedBox(
+                width: 335,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ),
+                  child: const Text(
+                    '三重',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
-              child: const Text(
-                '滋賀',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
+              const SizedBox(
+                height: 31,
+              ),
+              SizedBox(
+                width: 335,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ),
+                  child: const Text(
+                    '滋賀',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
-          const SizedBox(
-            height: 31,
-          ),
-          SizedBox(
-            width: 335,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
+              const SizedBox(
+                height: 31,
+              ),
+              SizedBox(
+                width: 335,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ),
+                  child: const Text(
+                    '京都',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
-              child: const Text(
-                '京都',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
+              const SizedBox(
+                height: 31,
+              ),
+              SizedBox(
+                width: 335,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ),
+                  child: const Text(
+                    '大阪',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
-          const SizedBox(
-            height: 31,
-          ),
-          SizedBox(
-            width: 335,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
+              const SizedBox(
+                height: 31,
+              ),
+              SizedBox(
+                width: 335,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ),
+                  child: const Text(
+                    '兵庫',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
-              child: const Text(
-                '大阪',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
+              const SizedBox(
+                height: 31,
+              ),
+              SizedBox(
+                width: 335,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ),
+                  child: const Text(
+                    '奈良',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
-          const SizedBox(
-            height: 31,
-          ),
-          SizedBox(
-            width: 335,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
+              const SizedBox(
+                height: 31,
+              ),
+              SizedBox(
+                width: 335,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ),
+                  child: const Text(
+                    '和歌山',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
-              child: const Text(
-                '兵庫',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
-                ),
-              ),
-            ),
+            ],
           ),
-          const SizedBox(
-            height: 31,
-          ),
-          SizedBox(
-            width: 335,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
-                ),
-              ),
-              child: const Text(
-                '奈良',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(
-            height: 31,
-          ),
-          SizedBox(
-            width: 335,
-            height: 50,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white,
-                elevation: 0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50),
-                ),
-              ),
-              child: const Text(
-                '和歌山',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
-                ),
-              ),
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
