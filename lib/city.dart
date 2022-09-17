@@ -13,7 +13,10 @@ class City extends StatelessWidget {
       ),
       body: Column(
         children: [
-          StaticMapView(),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: StaticMapView(),
+          )
         ],
       ),
       backgroundColor: const Color(0xff66B6C0),
