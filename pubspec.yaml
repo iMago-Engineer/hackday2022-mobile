@@ -48,7 +48,7 @@ dev_dependencies:
 
 flutter_native_splash:
   color: "66B6C0"
-  image: "asset/mitukerudo_icon.png"
+  image: "asset/mitukerudo_2bai_icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
