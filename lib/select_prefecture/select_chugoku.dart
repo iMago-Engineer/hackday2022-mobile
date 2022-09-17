@@ -35,7 +35,9 @@ class SelectChugoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '鳥取県',
+                        ),
                       ),
                     );
                   },
@@ -66,7 +68,9 @@ class SelectChugoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '島根県',
+                        ),
                       ),
                     );
                   },
@@ -97,7 +101,9 @@ class SelectChugoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '岡山県',
+                        ),
                       ),
                     );
                   },
@@ -128,7 +134,9 @@ class SelectChugoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '広島県',
+                        ),
                       ),
                     );
                   },
@@ -159,7 +167,9 @@ class SelectChugoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '山口県',
+                        ),
                       ),
                     );
                   },

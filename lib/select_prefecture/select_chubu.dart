@@ -35,7 +35,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '新潟県',
+                            ),
                           ),
                         );
                       },
@@ -66,7 +68,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '富山県',
+                            ),
                           ),
                         );
                       },
@@ -97,7 +101,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '石川県',
+                            ),
                           ),
                         );
                       },
@@ -128,7 +134,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '福井県',
+                            ),
                           ),
                         );
                       },
@@ -159,7 +167,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '山梨県',
+                            ),
                           ),
                         );
                       },
@@ -190,7 +200,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '長野県',
+                            ),
                           ),
                         );
                       },
@@ -221,7 +233,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '岐阜県',
+                            ),
                           ),
                         );
                       },
@@ -252,7 +266,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '静岡県',
+                            ),
                           ),
                         );
                       },
@@ -283,7 +299,9 @@ class SelectChubu extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SelectTerms(),
+                            builder: (context) => const SelectTerms(
+                              region: '愛知県',
+                            ),
                           ),
                         );
                       },

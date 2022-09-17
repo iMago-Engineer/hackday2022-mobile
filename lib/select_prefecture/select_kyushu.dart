@@ -35,7 +35,9 @@ class SelectKyushu extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '福岡県',
+                        ),
                       ),
                     );
                   },
@@ -66,7 +68,9 @@ class SelectKyushu extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '佐賀県',
+                        ),
                       ),
                     );
                   },
@@ -97,7 +101,9 @@ class SelectKyushu extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '長崎県',
+                        ),
                       ),
                     );
                   },
@@ -128,7 +134,9 @@ class SelectKyushu extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '熊本県',
+                        ),
                       ),
                     );
                   },
@@ -159,7 +167,9 @@ class SelectKyushu extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '大分県',
+                        ),
                       ),
                     );
                   },
@@ -190,7 +200,9 @@ class SelectKyushu extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '宮崎県',
+                        ),
                       ),
                     );
                   },
@@ -221,7 +233,9 @@ class SelectKyushu extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '鹿児島県',
+                        ),
                       ),
                     );
                   },
@@ -252,7 +266,9 @@ class SelectKyushu extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '沖縄県',
+                        ),
                       ),
                     );
                   },

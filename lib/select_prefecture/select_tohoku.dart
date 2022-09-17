@@ -35,7 +35,9 @@ class SelectTohoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '青森県',
+                        ),
                       ),
                     );
                   },
@@ -66,7 +68,9 @@ class SelectTohoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '岩手県',
+                        ),
                       ),
                     );
                   },
@@ -97,7 +101,9 @@ class SelectTohoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '宮城県',
+                        ),
                       ),
                     );
                   },
@@ -128,7 +134,9 @@ class SelectTohoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '秋田県',
+                        ),
                       ),
                     );
                   },
@@ -159,7 +167,9 @@ class SelectTohoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '山形県',
+                        ),
                       ),
                     );
                   },
@@ -190,7 +200,9 @@ class SelectTohoku extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '福島県',
+                        ),
                       ),
                     );
                   },
