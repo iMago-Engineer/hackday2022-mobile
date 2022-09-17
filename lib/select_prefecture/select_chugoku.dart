@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../select_terms.dart';
+
 class SelectChugoku extends StatelessWidget {
   const SelectChugoku({super.key});
 
@@ -29,7 +31,14 @@ class SelectChugoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -38,7 +47,7 @@ class SelectChugoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '鳥取',
+                    '鳥取県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -53,7 +62,14 @@ class SelectChugoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -62,7 +78,7 @@ class SelectChugoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '島根',
+                    '島根県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -77,7 +93,14 @@ class SelectChugoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -86,7 +109,7 @@ class SelectChugoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '岡山',
+                    '岡山県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -101,7 +124,14 @@ class SelectChugoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -110,7 +140,7 @@ class SelectChugoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '広島',
+                    '広島県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -125,7 +155,14 @@ class SelectChugoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -134,7 +171,7 @@ class SelectChugoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '山口',
+                    '山口県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,

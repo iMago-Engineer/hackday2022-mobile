@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../select_terms.dart';
+
 class SelectKyushu extends StatelessWidget {
   const SelectKyushu({super.key});
 
@@ -29,7 +31,14 @@ class SelectKyushu extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -38,7 +47,7 @@ class SelectKyushu extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '福岡',
+                    '福岡県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -53,7 +62,14 @@ class SelectKyushu extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -62,7 +78,7 @@ class SelectKyushu extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '佐賀',
+                    '佐賀県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -77,7 +93,14 @@ class SelectKyushu extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -86,7 +109,7 @@ class SelectKyushu extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '長崎',
+                    '長崎県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -101,7 +124,14 @@ class SelectKyushu extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -110,7 +140,7 @@ class SelectKyushu extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '熊本',
+                    '熊本県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -125,7 +155,14 @@ class SelectKyushu extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -134,7 +171,7 @@ class SelectKyushu extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '大分',
+                    '大分県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -149,7 +186,14 @@ class SelectKyushu extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -158,7 +202,7 @@ class SelectKyushu extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '宮崎',
+                    '宮崎県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -173,7 +217,14 @@ class SelectKyushu extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -182,7 +233,7 @@ class SelectKyushu extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '鹿児島',
+                    '鹿児島県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -197,7 +248,14 @@ class SelectKyushu extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -206,7 +264,7 @@ class SelectKyushu extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '沖縄',
+                    '沖縄県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
