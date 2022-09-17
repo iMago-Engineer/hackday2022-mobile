@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hackday2022/select_chubu.dart';
+import 'package:hackday2022/select_chugoku.dart';
+import 'package:hackday2022/select_kanto.dart';
+import 'package:hackday2022/select_kinki.dart';
+import 'package:hackday2022/select_kyushu.dart';
+import 'package:hackday2022/select_shikoku.dart';
+import 'package:hackday2022/select_tohoku.dart';
 
 class SelectRegion extends StatelessWidget {
   const SelectRegion({super.key});
@@ -53,7 +60,14 @@ class SelectRegion extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTohoku(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -77,7 +91,14 @@ class SelectRegion extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectKanto(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -101,7 +122,14 @@ class SelectRegion extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectChubu(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -125,7 +153,14 @@ class SelectRegion extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectKinki(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -149,7 +184,14 @@ class SelectRegion extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectChugoku(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -173,7 +215,14 @@ class SelectRegion extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectShikoku(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -197,7 +246,14 @@ class SelectRegion extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectKyushu(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
