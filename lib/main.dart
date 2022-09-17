@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackday2022/select_region.dart';
+import 'city.dart';
 
 void main() => runApp(const MyApp());
 
@@ -64,7 +65,7 @@ class Home extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectRegion(),
+                        builder: (context) => const City(),
                       ),
                     );
                   },
