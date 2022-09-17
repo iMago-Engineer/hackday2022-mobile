@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class SelectTerms extends StatelessWidget {
   const SelectTerms({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return const SizedBox(child: MainPage(title: '見つけld'));
@@ -20,16 +19,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainState extends State<MainPage> {
-  // void _incrementCounter() {
-  //   setState(() {});
-  // }
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   while(true){
-  //   }
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,25 +45,7 @@ class _MainState extends State<MainPage> {
             const SizedBox(
               height: 32,
             ),
-            _Rain(),
-            _TemperatureHight(),
-            _TemperatureLow(),
-            _Security(),
-            const SizedBox(
-              height: 24,
-            ),
-            ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  backgroundColor: const Color(0xff66B6C0),
-                  shape: const StadiumBorder(),
-                  fixedSize: const Size(double.maxFinite, 40)),
-              child: const Text(
-                "検索",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-              ),
-            )
+            _SelectComponent()
           ],
         ),
       ),
@@ -82,150 +53,147 @@ class _MainState extends State<MainPage> {
   }
 }
 
-class _Rain extends StatefulWidget {
+class _SelectComponent extends StatefulWidget {
   @override
-  State<_Rain> createState() => _RainState();
+  State<_SelectComponent> createState() => _SelectComponentState();
 }
 
-//メモ：フロントで返す値を逆にする（5は雨が降る方が良い、になってる）
-class _RainState extends State<_Rain> {
-  var rain = 0.0;
+//TODO：フロントで返す値を逆にする（5は雨が降る方が良い、になってる）
+class _SelectComponentState extends State<_SelectComponent> {
+  double rain = 0.0;
+  double temperatureHight = 0.0;
+  double temperatureLow = 0.0;
+  double security = 0.0;
+
+  // 最初に一度だけ実行される
+  // 始めの値が0か確認している
   @override
-  Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
-        child: Column(
-          children: [
-            const Align(
-              alignment: Alignment.center,
-              child: Text(
-                "雨が降らない方が良い",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Slider(
-                value: rain,
-                min: 0,
-                max: 5,
-                divisions: 5,
-                activeColor: const Color(0xff66B6C0),
-                onChanged: (double value) {
-                  setState(() {
-                    rain = value.roundToDouble();
-                  });
-                }),
-          ],
-        ));
+  void initState() {
+    super.initState();
+    valueChanged();
   }
-}
 
-class _TemperatureHight extends StatefulWidget {
-  @override
-  State<_TemperatureHight> createState() => _TemperatureHightState();
-}
-
-//メモ：フロントで返す値を逆にする（5は雨が降る方が良い、になってる）
-class _TemperatureHightState extends State<_TemperatureHight> {
-  var temperatureHight = 0.0;
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
-        child: Column(
-          children: [
-            const Align(
-              alignment: Alignment.center,
-              child: Text(
-                "昼間の気温は高くない方が良い",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Slider(
-                value: temperatureHight,
-                min: 0,
-                max: 5,
-                divisions: 5,
-                activeColor: const Color(0xff66B6C0),
-                onChanged: (double value) {
-                  setState(() {
-                    temperatureHight = value.roundToDouble();
-                  });
-                }),
-          ],
-        ));
+  // 値が変わったかどうか確認する関数
+  // ボタンを押したときに実行するようになっている
+  //　APIとの繋ぎが出来たら削除する
+  void valueChanged() {
+    debugPrint(rain.toString());
+    debugPrint(temperatureHight.toString());
+    debugPrint(temperatureLow.toString());
+    debugPrint(security.toString());
   }
-}
 
-class _TemperatureLow extends StatefulWidget {
-  @override
-  State<_TemperatureLow> createState() => _TemperatureLowState();
-}
-
-//メモ：フロントで返す値を逆にする（5は雨が降る方が良い、になってる）
-class _TemperatureLowState extends State<_TemperatureLow> {
-  var temperatureLow = 0.0;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
-        child: Column(
-          children: [
-            const Align(
-              alignment: Alignment.center,
-              child: Text(
-                "夜の気温は低くない方が良い",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+    return Column(
+      children: [
+        Padding(
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
+            child: Column(
+              children: [
+                const Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    "雨が降らない方が良い",
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Slider(
+                    value: rain,
+                    min: 0,
+                    max: 5,
+                    divisions: 5,
+                    activeColor: const Color(0xff66B6C0),
+                    onChanged: (double value) {
+                      setState(() {
+                        rain = value.roundToDouble();
+                      });
+                    }),
+              ],
+            )),
+        Padding(
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
+            child: Column(
+              children: [
+                const Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    "昼間の気温は高くない方が良い",
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Slider(
+                    value: temperatureHight,
+                    min: 0,
+                    max: 5,
+                    divisions: 5,
+                    activeColor: const Color(0xff66B6C0),
+                    onChanged: (double value) {
+                      setState(() {
+                        temperatureHight = value.roundToDouble();
+                      });
+                    }),
+              ],
+            )),
+        Padding(
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
+            child: Column(children: [
+              const Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "夜の気温は低くない方が良い",
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-            Slider(
-                value: temperatureLow,
-                min: 0,
-                max: 5,
-                divisions: 5,
-                activeColor: const Color(0xff66B6C0),
-                onChanged: (double value) {
-                  setState(() {
-                    temperatureLow = value.roundToDouble();
-                  });
-                }),
-          ],
-        ));
-  }
-}
-
-class _Security extends StatefulWidget {
-  @override
-  State<_Security> createState() => _SecurityState();
-}
-
-//メモ：フロントで返す値を逆にする（5は雨が降る方が良い、になってる）
-class _SecurityState extends State<_Security> {
-  var security = 0.0;
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
-        child: Column(
-          children: [
-            const Align(
-              alignment: Alignment.center,
-              child: Text(
-                "治安が悪くない方が良い",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-            ),
-            Slider(
-                value: security,
-                min: 0,
-                max: 5,
-                divisions: 5,
-                activeColor: const Color(0xff66B6C0),
-                onChanged: (double value) {
-                  setState(() {
-                    security = value.roundToDouble();
-                  });
-                }),
-          ],
-        ));
+              Slider(
+                  value: temperatureLow,
+                  min: 0,
+                  max: 5,
+                  divisions: 5,
+                  activeColor: const Color(0xff66B6C0),
+                  onChanged: (double value) {
+                    setState(() {
+                      temperatureLow = value.roundToDouble();
+                    });
+                  }),
+            ])),
+        Padding(
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 4),
+            child: Column(
+              children: [
+                const Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    "治安が悪くない方が良い",
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Slider(
+                    value: security,
+                    min: 0,
+                    max: 5,
+                    divisions: 5,
+                    activeColor: const Color(0xff66B6C0),
+                    onChanged: (double value) {
+                      setState(() {
+                        security = value.roundToDouble();
+                      });
+                    }),
+              ],
+            )),
+        const SizedBox(height: 24),
+        ElevatedButton(
+            onPressed: valueChanged,
+            style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: const Color(0xff66B6C0),
+                shape: const StadiumBorder(),
+                fixedSize: const Size(double.maxFinite, 40)),
+            child: const Text(
+              "検索",
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ))
+      ],
+    );
   }
 }
