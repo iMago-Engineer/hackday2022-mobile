@@ -303,6 +303,9 @@ class SelectChubu extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const SizedBox(
+                    height: 32,
+                  )
                 ],
               ),
             ),
