@@ -6,23 +6,20 @@ class SelectTerms extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: '見つけld',
-        theme: ThemeData(),
-        home: const MyHomePage(title: '見つけld'));
+    return const SizedBox(child: MainPage(title: '見つけld'));
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MainPage> createState() => _MainState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MainState extends State<MainPage> {
   // void _incrementCounter() {
   //   setState(() {});
   // }
@@ -37,11 +34,12 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: true,
         backgroundColor: const Color(0xff66B6C0),
         centerTitle: false,
         title: const Text(
           "見つけld",
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 24),
         ),
         elevation: 0,
       ),
@@ -61,7 +59,22 @@ class _MyHomePageState extends State<MyHomePage> {
             _Rain(),
             _TemperatureHight(),
             _TemperatureLow(),
-            _Security()
+            _Security(),
+            const SizedBox(
+              height: 24,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: const Color(0xff66B6C0),
+                  shape: const StadiumBorder(),
+                  fixedSize: const Size(double.maxFinite, 40)),
+              child: const Text(
+                "検索",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+            )
           ],
         ),
       ),
