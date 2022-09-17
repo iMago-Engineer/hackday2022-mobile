@@ -6,6 +6,7 @@ import 'package:hackday2022/select_prefecture/select_kinki.dart';
 import 'package:hackday2022/select_prefecture/select_kyushu.dart';
 import 'package:hackday2022/select_prefecture/select_shikoku.dart';
 import 'package:hackday2022/select_prefecture/select_tohoku.dart';
+import 'package:hackday2022/select_terms.dart';
 
 class SelectRegion extends StatelessWidget {
   const SelectRegion({super.key});
@@ -36,7 +37,14 @@ class SelectRegion extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
