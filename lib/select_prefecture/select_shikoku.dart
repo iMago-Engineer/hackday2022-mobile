@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../select_terms.dart';
+
 class SelectShikoku extends StatelessWidget {
   const SelectShikoku({super.key});
 
@@ -29,7 +31,14 @@ class SelectShikoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -38,7 +47,7 @@ class SelectShikoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '香川',
+                    '香川県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -53,7 +62,14 @@ class SelectShikoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -62,7 +78,7 @@ class SelectShikoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '徳島',
+                    '徳島県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -77,7 +93,14 @@ class SelectShikoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -86,7 +109,7 @@ class SelectShikoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '愛媛',
+                    '愛媛県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -101,7 +124,14 @@ class SelectShikoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -110,7 +140,7 @@ class SelectShikoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '高知',
+                    '高知県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,

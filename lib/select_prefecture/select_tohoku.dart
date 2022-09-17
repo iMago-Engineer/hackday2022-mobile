@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../select_terms.dart';
+
 class SelectTohoku extends StatelessWidget {
   const SelectTohoku({super.key});
 
@@ -29,7 +31,14 @@ class SelectTohoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -38,7 +47,7 @@ class SelectTohoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '青森',
+                    '青森県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -53,7 +62,14 @@ class SelectTohoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -62,7 +78,7 @@ class SelectTohoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '岩手',
+                    '岩手県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -77,7 +93,14 @@ class SelectTohoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -86,7 +109,7 @@ class SelectTohoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '宮城',
+                    '宮城県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -101,7 +124,14 @@ class SelectTohoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -110,7 +140,7 @@ class SelectTohoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '秋田',
+                    '秋田県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -125,7 +155,14 @@ class SelectTohoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -134,7 +171,7 @@ class SelectTohoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '山形',
+                    '山形県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -149,7 +186,14 @@ class SelectTohoku extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -158,7 +202,7 @@ class SelectTohoku extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '福島',
+                    '福島県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,

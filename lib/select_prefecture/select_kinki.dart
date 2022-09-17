@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../select_terms.dart';
+
 class SelectKinki extends StatelessWidget {
   const SelectKinki({super.key});
 
@@ -29,7 +31,14 @@ class SelectKinki extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -38,7 +47,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '三重',
+                    '三重県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -53,7 +62,14 @@ class SelectKinki extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -62,7 +78,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '滋賀',
+                    '滋賀県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -77,7 +93,14 @@ class SelectKinki extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -86,7 +109,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '京都',
+                    '京都県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -101,7 +124,14 @@ class SelectKinki extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -110,7 +140,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '大阪',
+                    '大阪県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -125,7 +155,14 @@ class SelectKinki extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -134,7 +171,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '兵庫',
+                    '兵庫県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -149,7 +186,14 @@ class SelectKinki extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -158,7 +202,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '奈良',
+                    '奈良県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -173,7 +217,14 @@ class SelectKinki extends StatelessWidget {
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SelectTerms(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     elevation: 0,
@@ -182,7 +233,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '和歌山',
+                    '和歌山県',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
