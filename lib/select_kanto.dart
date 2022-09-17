@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SelectTohoku extends StatelessWidget {
-  const SelectTohoku({super.key});
+class SelectKanto extends StatelessWidget {
+  const SelectKanto({super.key});
 
   @override
   Widget build(BuildContext context) {
