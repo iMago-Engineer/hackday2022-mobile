@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:hackday2022/select_chubu.dart';
-import 'package:hackday2022/select_chugoku.dart';
-import 'package:hackday2022/select_kanto.dart';
-import 'package:hackday2022/select_kinki.dart';
-import 'package:hackday2022/select_kyushu.dart';
-import 'package:hackday2022/select_shikoku.dart';
-import 'package:hackday2022/select_tohoku.dart';
+import 'package:hackday2022/select_prefecture/select_chubu.dart';
+import 'package:hackday2022/select_prefecture/select_chugoku.dart';
+import 'package:hackday2022/select_prefecture/select_kanto.dart';
+import 'package:hackday2022/select_prefecture/select_kinki.dart';
+import 'package:hackday2022/select_prefecture/select_kyushu.dart';
+import 'package:hackday2022/select_prefecture/select_shikoku.dart';
+import 'package:hackday2022/select_prefecture/select_tohoku.dart';
 
 class SelectRegion extends StatelessWidget {
   const SelectRegion({super.key});
