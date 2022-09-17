@@ -109,7 +109,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '京都県',
+                    '京都府',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -140,7 +140,7 @@ class SelectKinki extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '大阪県',
+                    '大阪府',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,

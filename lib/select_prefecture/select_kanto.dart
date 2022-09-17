@@ -202,7 +202,7 @@ class SelectKanto extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '東京県',
+                    '東京都',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
