@@ -41,7 +41,9 @@ class SelectRegion extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: "北海道",
+                        ),
                       ),
                     );
                   },

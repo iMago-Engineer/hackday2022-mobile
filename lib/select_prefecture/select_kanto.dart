@@ -35,7 +35,9 @@ class SelectKanto extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '茨城県',
+                        ),
                       ),
                     );
                   },
@@ -66,7 +68,9 @@ class SelectKanto extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '栃木県',
+                        ),
                       ),
                     );
                   },
@@ -97,7 +101,9 @@ class SelectKanto extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '群馬県',
+                        ),
                       ),
                     );
                   },
@@ -128,7 +134,9 @@ class SelectKanto extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '埼玉県',
+                        ),
                       ),
                     );
                   },
@@ -159,7 +167,9 @@ class SelectKanto extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '千葉県',
+                        ),
                       ),
                     );
                   },
@@ -190,7 +200,9 @@ class SelectKanto extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '東京都',
+                        ),
                       ),
                     );
                   },
@@ -202,7 +214,7 @@ class SelectKanto extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    '東京県',
+                    '東京都',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -221,7 +233,9 @@ class SelectKanto extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const SelectTerms(),
+                        builder: (context) => const SelectTerms(
+                          region: '神奈川県',
+                        ),
                       ),
                     );
                   },

@@ -1,18 +1,25 @@
 import 'package:flutter/material.dart';
 
 class SelectTerms extends StatelessWidget {
-  const SelectTerms({super.key});
+  final String region;
+  // ignore: use_key_in_widget_constructors
+  const SelectTerms({required this.region});
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(child: MainPage(title: '見つけld'));
+    return SizedBox(
+        child: MainPage(
+      title: '見つけld',
+      region: region,
+    ));
   }
 }
 
 class MainPage extends StatefulWidget {
-  const MainPage({super.key, required this.title});
+  const MainPage({super.key, required this.title, required this.region});
 
   final String title;
+  final String region;
 
   @override
   State<MainPage> createState() => _MainState();
@@ -45,7 +52,9 @@ class _MainState extends State<MainPage> {
             const SizedBox(
               height: 32,
             ),
-            _SelectComponent()
+            _SelectComponent(
+              region: widget.region,
+            )
           ],
         ),
       ),
@@ -54,33 +63,88 @@ class _MainState extends State<MainPage> {
 }
 
 class _SelectComponent extends StatefulWidget {
+  const _SelectComponent({required this.region});
+  final String region;
   @override
   State<_SelectComponent> createState() => _SelectComponentState();
 }
 
-//TODO：フロントで返す値を逆にする（5は雨が降る方が良い、になってる）
 class _SelectComponentState extends State<_SelectComponent> {
+  // バー用の変数
   double rain = 0.0;
   double temperatureHight = 0.0;
   double temperatureLow = 0.0;
   double security = 0.0;
+  // サーバーに送る用の保存用変数
+  double rainValue = 0.0;
+  double temperatureHightValue = 0.0;
+  double temperatureLowValue = 0.0;
+  double securityValue = 0.0;
 
-  // 最初に一度だけ実行される
-  // 始めの値が0か確認している
-  @override
-  void initState() {
-    super.initState();
-    valueChanged();
-  }
-
-  // 値が変わったかどうか確認する関数
+  // 値をサーバーに適した形にする関数+送信もかねている
   // ボタンを押したときに実行するようになっている
-  //　APIとの繋ぎが出来たら削除する
+  //　APIとの繋ぎで使用する
   void valueChanged() {
-    debugPrint(rain.toString());
-    debugPrint(temperatureHight.toString());
-    debugPrint(temperatureLow.toString());
-    debugPrint(security.toString());
+    if (rain == 0.0) {
+      rainValue = 5.0;
+    } else if (rain == 1.0) {
+      rainValue = 4.0;
+    } else if (rain == 2.0) {
+      rainValue = 3.0;
+    } else if (rain == 3.0) {
+      rainValue = 2.0;
+    } else if (rain == 4.0) {
+      rainValue = 1.0;
+    } else if (rain == 5.0) {
+      rainValue = 0.0;
+    }
+    if (temperatureHight == 0.0) {
+      temperatureHightValue = 5.0;
+    } else if (temperatureHight == 1.0) {
+      temperatureHightValue = 4.0;
+    } else if (temperatureHight == 2.0) {
+      temperatureHightValue = 3.0;
+    } else if (temperatureHight == 3.0) {
+      temperatureHightValue = 2.0;
+    } else if (temperatureHight == 4.0) {
+      temperatureHightValue = 1.0;
+    } else if (temperatureHight == 5.0) {
+      temperatureHightValue = 0.0;
+    }
+
+    if (temperatureLow == 0.0) {
+      temperatureLowValue = 5.0;
+    } else if (temperatureLow == 1.0) {
+      temperatureLowValue = 4.0;
+    } else if (temperatureLow == 2.0) {
+      temperatureLowValue = 3.0;
+    } else if (temperatureLow == 3.0) {
+      temperatureLowValue = 2.0;
+    } else if (temperatureLow == 4.0) {
+      temperatureLowValue = 1.0;
+    } else if (temperatureLow == 5.0) {
+      temperatureLow = 0.0;
+    }
+    if (security == 0.0) {
+      securityValue = 5.0;
+    } else if (security == 1.0) {
+      securityValue = 4.0;
+    } else if (security == 2.0) {
+      securityValue = 3.0;
+    } else if (security == 3.0) {
+      securityValue = 2.0;
+    } else if (security == 4.0) {
+      securityValue = 1.0;
+    } else if (security == 5.0) {
+      securityValue = 0.0;
+    }
+    debugPrint(rainValue.toString());
+    debugPrint(temperatureHightValue.toString());
+    debugPrint(temperatureLowValue.toString());
+    debugPrint(securityValue.toString());
+    debugPrint(widget.region);
+
+    setState(() {});
   }
 
   @override
