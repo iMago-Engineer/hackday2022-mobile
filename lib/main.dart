@@ -28,6 +28,13 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
+                  width: 200,
+                  height: 200,
+                  child: Center(
+                    child: Image.asset('asset/mitukerudo_2bai_icon.png'),
+                  )),
+              const SizedBox(height: 50),
+              SizedBox(
                 width: 335,
                 height: 50,
                 child: ElevatedButton(
