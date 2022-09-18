@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackday2022/city.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 class SelectTerms extends StatelessWidget {
   final String region;
@@ -27,6 +29,22 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainState extends State<MainPage> {
+  Future<void> _Get() async {
+    // APIのURL
+    final request = await http.get(Uri.parse(
+        'https://0af0-126-49-127-149.jp.ngrok.io/search?pref=%E5%B2%A1%E5%B1%B1%E7%9C%8C&rainfall=3.2&temp_day=1.2&temp_night=1.2&crime_rate=1.9'));
+    if (request.statusCode == 200) {
+      debugPrint(request.statusCode.toString());
+
+      var json = const Utf8Decoder().convert(request.bodyBytes);
+      var map = jsonDecode(json);
+      var response = Response.fromJson(map);
+      print(response);
+    } else {
+      debugPrint(request.statusCode.toString());
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,6 +61,7 @@ class _MainState extends State<MainPage> {
       body: Center(
         child: Column(
           children: <Widget>[
+            ElevatedButton(onPressed: _Get, child: Text("Push")),
             const SizedBox(
               height: 24,
             ),
