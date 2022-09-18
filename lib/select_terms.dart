@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackday2022/city.dart';
 
 class SelectTerms extends StatelessWidget {
   final String region;
@@ -145,6 +146,15 @@ class _SelectComponentState extends State<_SelectComponent> {
     debugPrint(widget.region);
 
     setState(() {});
+
+    // 遷移させる
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) => City(
+                region: widget.region,
+              )),
+    );
   }
 
   @override
