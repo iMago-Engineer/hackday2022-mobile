@@ -271,3 +271,17 @@ class _SelectComponentState extends State<_SelectComponent> {
     );
   }
 }
+
+class Response {
+  Response({required this.city, required this.location, required this.pref});
+
+  String city;
+  String location;
+  String pref;
+
+  factory Response.fromJson(Map<String, dynamic> json) => Response(
+        city: json['city'] as String,
+        location: json['location'] as String,
+        pref: json['pref'] as String,
+      );
+}
