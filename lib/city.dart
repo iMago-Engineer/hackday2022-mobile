@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:hackday2022/main.dart';
 import 'package:http/http.dart' as http;
 import 'google_map_api.dart';
 
@@ -14,6 +15,16 @@ class City extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xff66B6C0),
         elevation: 0,
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MyApp()),
+                    (route) => false);
+              },
+              icon: const Icon(Icons.home))
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
