@@ -5,7 +5,8 @@ import 'package:http/http.dart' as http;
 import 'google_map_api.dart';
 
 class City extends StatelessWidget {
-  const City({super.key});
+  final String region;
+  City({super.key, required this.region});
 
   @override
   Widget build(BuildContext context) {
@@ -14,14 +15,25 @@ class City extends StatelessWidget {
         backgroundColor: const Color(0xff66B6C0),
         elevation: 0,
       ),
-      body: Column(
-        children: [
-          const Padding(
-            padding: EdgeInsets.all(20),
-            child: StaticMapView(),
-          ),
-          _Wether()
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Text(
+              region,
+              style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                  color: Colors.white),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(20),
+              child: StaticMapView(),
+            ),
+            _Wether(
+              region: region,
+            )
+          ],
+        ),
       ),
       backgroundColor: const Color(0xff66B6C0),
     );
@@ -60,6 +72,8 @@ class StaticMapView extends StatelessWidget {
 }
 
 class _Wether extends StatefulWidget {
+  final String region;
+  _Wether({required this.region});
   @override
   _WetherState createState() => _WetherState();
 }
@@ -175,8 +189,7 @@ class _WetherState extends State<_Wether> {
 
   Future<void> _wetherGet() async {
     // ユーザーの選択から都道府県コードを取得
-    // TODO: 今はダミーで北海道を入れているので前画面の情報を引き継ぐ
-    String prefectureCode = prefectures[prefectures.indexOf("北海道") + 1];
+    String prefectureCode = prefectures[prefectures.indexOf(widget.region) + 1];
 
     // APIのURL
     final request = await http.get(Uri.parse(
