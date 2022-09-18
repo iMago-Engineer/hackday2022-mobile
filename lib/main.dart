@@ -62,10 +62,13 @@ class Home extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
+                    // TODO: 遷移先変更必要
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const City(),
+                        builder: (context) => City(
+                          region: "北海道",
+                        ),
                       ),
                     );
                   },
