@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hackday2022/select_region.dart';
-import 'city.dart';
+import 'select_region.dart';
+import 'recently_view.dart';
 
 void main() => runApp(const MyApp());
 
@@ -66,9 +66,7 @@ class Home extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => City(
-                          region: "北海道",
-                        ),
+                        builder: (context) => RecentlyView(),
                       ),
                     );
                   },
